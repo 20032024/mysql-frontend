@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumo de REST-API de Computadoras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Consumo de REST-API de Computadoras</h2>
+
+  <form onsubmit="event.preventDefault(); postComputer();">
+    <div>
+      <label for="nameCorporation">Corporation</label>
+      <input type="text" id="nameCorporation" required>
+    </div>
+
+    <div>
+      <label for="versionSoftware">Software Version</label>
+      <input type="text" id="versionSoftware" required>
+    </div>
+
+    <div>
+      <label for="nameComputer">Computer Name</label>
+      <input type="text" id="nameComputer" required>
+    </div>
+
+    <div>
+      <label for="processor">Processor</label>
+      <input type="text" id="processor" required>
+    </div>
+
+    <div>
+      <label for="portatil">¿Portátil? (sí/no)</label>
+      <input type="text" id="portatil" required>
+    </div>
+
+    <input type="submit" value="POST computadora">
+    <button type="button" onclick="getComputers()">GET computadoras</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="callrestapi.js"></script>
+</body>
+</html>

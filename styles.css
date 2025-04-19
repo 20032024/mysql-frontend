@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+body {
+  background-image: url('assets/gradii-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Título */
+h2 {
+  color: #fff;
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+
+form, table {
+  background-color: transparent; /* quitar fondo blanco */
+  box-shadow: none;
+  border: none;
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.2); /* opcional: campo translúcido */
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 5px 0 10px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #eee;
+}
+
+button, input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #eee;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); /* celdas semitransparentes */
+  color: white;
+}
+
+th {
+  background-color: rgba(0, 123, 255, 0.7);
+}
