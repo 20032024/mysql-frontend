@@ -2,7 +2,7 @@
 
 //var url = "https://pg-restapi-computers.onrender.com/api/computers";
 
-var url = "https://pg-restapi-computers.onrender.com/api/computers";
+var url = "https://mysql-restapi-j3wx.onrender.com/api/computers";
 
 function postComputer() {
   console.log("Enviando a:", url);
